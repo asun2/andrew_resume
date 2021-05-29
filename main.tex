@@ -1,0 +1,252 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\large \scshape Andrew Sun} \\ \vspace{1pt}
+    \small 781-606-5439 $|$ \href{mailto:x@x.com}{\underline{andrewsun2@gmail.com}} $|$ 
+    \href{https://github.com/asun2}{\underline{github.com/asun2}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Massachusetts Amherst}{Amherst, MA}
+      {Pursuing a B.S. in Computer Science at UMass Amherst. GPA: 3.54}{Sep 2018 -- May 2022}
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------COURSEWORK-----------x
+\section{Coursework}
+    \resumeSubHeadingListStart
+   % \resumeProjectHeading
+          %{\textbf{CS345 - Practice and Applications of Data Management} $|$ \emph{SQL}}{Spring 2021}
+          %\resumeItemListStart
+         %   \resumeItem{}
+          %\resumeItemListEnd\
+      \resumeProjectHeading
+          {\textbf{CS383 - Artificial Intelligence} $|$ \emph{Python, NumPy}}{Fall 2020}
+          \resumeItemListStart
+            \resumeItem{Applied key mathematical and programming concepts in AI. }
+            \resumeItem{Studied heuristic searches, min-max, alpha-beta pruning, knowledge bases, DAG representations of conditional probabilities, and Markov decision process.}
+          \resumeItemListEnd\
+      \resumeProjectHeading
+          {\textbf{CS311 - Intro to Algorithms} \emph{}}{Fall 2020}
+          \resumeItemListStart
+            \resumeItem{Learned, designed, and applied efficient algorithms for sorting,
+searching, and graphs. Assignments covered brute force, algorithm design analysis, divide and
+conquer, dynamic programming, cryptography and computational complexity theory.
+}
+          \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{CS230 - Computer Systems Principle} $|$ \emph{C}}{Fall 2020}
+        \resumeItemListStart
+            \resumeItem{Introduced to basics of computer system principles, using the
+C programming language. }
+            \resumeItem{Utilized data structures and pointers in programming assignments that
+covered a variety of topics, including arrays in C, pointers, bash, file I/O, synchronization, and networking}
+        \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{CS220 - Programming Methodology} $|$ \emph{JavaScript}}{Spring 2020}
+        \resumeItemListStart
+            \resumeItem{Explored programming skills within Javascript, like code refactoring, design patterns, builders patterns and unit testing. }
+            \resumeItem{Covered higher-order functions, filters, image processing, matchmaking, JSON data wrangling, interpreters, and finite state automata in assignments.}
+        \resumeItemListEnd
+      
+      
+%      \resumeProjectHeading
+%          \resumeItemListStart
+%           \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------Projects-----------------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{aimbot} $|$ \emph{Python, OpenCV}}{August 2020 -}
+            \resumeItemListStart
+                \resumeItem{Designed and engineered a camera rig that is capable of free look, utilizing 2 servos and a camera.}
+                \resumeItem{Added the ability to keep a moving object within frame, using OpenCV's built in object tracking, and comparing frames.}
+        \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{botcopium} $|$ \emph{Node.js, Discord.js}}{May 2021 -}
+            \resumeItemListStart
+                \resumeItem{Created a bot that responds to user requests.}
+                \resumeItem{}
+    \resumeSubHeadingListEnd
+
+%
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Administrative/IT}{May 2019 -- Present}
+      {PCP Primary Care North}{Peabody, MA}
+      \resumeItemListStart
+        \resumeItem{Delivered exemplary customer service to patients.}
+        \resumeItem{Trained colleagues in operating medical software and services, including EPIC and athenahealth.}
+        \resumeItem{Performed front desk and administrative duties, including services in-person and over the phone.}
+        \resumeItem{Managed accounting, referrals, and purchases for the practice}
+        \resumeItem{Maintained technological solutions across the practice, including starting up the practice under Partners Health}
+        \resumeItem{Relayed communication between patients and physician}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL, JavaScript, HTML/CSS, R, Tex} \\
+     \textbf{Developer Tools}{: Git, Node.js, VS Code, Xcode, PyCharm, IntelliJ, Eclipse} \\
+     
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+
+%
+%\section{Job Link}
+%\begin{itemize}[leftmargin=0.1in, label={}]
+%    \item{\href{https://www.linkedin.com/jobs/view/software-engineer-co-op-at-cohere-health-2383483060/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic}{\underline{Link to Cohere Software Engineer Co-op Job Ad}}}
+%\end{itemize}
+\end{document}
+
+
+%for assignment purposes
+
+
